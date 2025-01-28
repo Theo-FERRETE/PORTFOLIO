@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio de Theo FERRETE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Portfolio de Theo FERRETE</h1>
-    <p>Bienvenue dans mon univers de web design et de développement</p>
+    <div class="header-container">
+      <h1>Portfolio de <span class="highlight">Theo FERRETE</span></h1>
+      <p>Bienvenue dans mon univers de <span class="highlight">web design</span> et de <span class="highlight">développement</span></p>
+    </div>
   </header>
 
   <nav>
-    <ul>
+    <ul class="nav-links">
       <li><a href="fansite1.html">Eminem</a></li>
       <li><a href="Transformers.html">Transformers</a></li>
       <li><a href="Formule1.html">Formule 1</a></li>
@@ -22,32 +25,32 @@
   </nav>
 
   <main>
-    <section id="eminem">
+    <section id="eminem" class="card">
       <h2>Eminem</h2>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Eminem_%28cropped%29.jpg/640px-Eminem_%28cropped%29.jpg" alt="Eminem" class="hero-image">
       <p>Voici mon 1er site HTML fait au sein de mon école au cours d'un projet.</p>
-     <a href="fansite1.html">Voir le site</a>
+      <a href="fansite1.html" class="btn">Voir le site</a>
     </section>
 
-    <section id="Transformers">
-        <h2>Transformers</h2>
-        <img src="https://pm1.aminoapps.com/7145/05ab5c31111e443814cca47cd5fd07ed1c1a2abbr1-720-720v2_00.jpg" alt="Véhicule phare Audi" class="hero-image">
-        <p>Un site dédié à l'univers de la saga Transformers.</p>
-        <a href="Transformers.html">Voir le site</a>
-      </section>
+    <section id="Transformers" class="card">
+      <h2>Transformers</h2>
+      <img src="https://pm1.aminoapps.com/7145/05ab5c31111e443814cca47cd5fd07ed1c1a2abbr1-720-720v2_00.jpg" alt="Transformers" class="hero-image">
+      <p>Un site dédié à l'univers de la saga Transformers.</p>
+      <a href="Transformers.html" class="btn">Voir le site</a>
+    </section>
 
-    <section id="f1">
+    <section id="f1" class="card">
       <h2>Formule 1</h2>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhouMADNnYXNVPo5pLZSYbmu_OeE3JSe3HHw&s" alt="Véhicule phare Audi" class="hero-image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhouMADNnYXNVPo5pLZSYbmu_OeE3JSe3HHw&s" alt="Formule 1" class="hero-image">
       <p>Un projet captivant autour de la passion pour les courses de Formule 1.</p>
-      <a href="Formule1.html">Voir le Site</a>
+      <a href="Formule1.html" class="btn">Voir le site</a>
     </section>
 
-    <section id="nyc">
+    <section id="nyc" class="card">
       <h2>New York</h2>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg/640px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg" alt="New York" class="hero-image">
       <p>Un site qui explore les merveilles de la ville de New York.</p>
-      <a href="New York.html">Voir le Site</a>
+      <a href="New York.html" class="btn">Voir le site</a>
     </section>
   </main>
 
