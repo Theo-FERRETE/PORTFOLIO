@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg, #0f2027, #a39d9d, #f70101);
     line-height: 1.6;
     overflow-x: hidden;
   }
@@ -143,7 +143,7 @@ body {
   /* Media Queries pour la responsivité */
   
   /* Petits écrans, comme Samsung Galaxy A54 */
-  @media (max-width: 480px) {
+  @media (max-width: 48x) {
     header h1 {
       font-size: 2em;
     }
@@ -173,19 +173,5 @@ body {
       max-width: 90%; /* Images légèrement réduites pour petits écrans */
     }
   }
-  
-  /* Moyens écrans, comme tablettes */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-wrap: wrap;
-    }
-  
-    .card {
-      margin-bottom: 30px;
-    }
-  
-    .card h2 {
-      font-size: 1.8em;
-    }
-  }
+
   
