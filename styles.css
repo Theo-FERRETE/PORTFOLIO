@@ -1,105 +1,100 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #fff;
-    background: linear-gradient(135deg, #0f2027, #a39d9d, #f70101);
     line-height: 1.6;
     overflow-x: hidden;
-  }
-  
-  header {
+}
+
+header {
     text-align: center;
-    padding: 40px;
+    padding: 40px 20px;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid #900;
-  }
-  
-  header h1 {
+    border-bottom: 3px solid #f00;
+}
+
+header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Orbitron', sans-serif;
-    color: #f00;
     text-transform: uppercase;
-  }
-  
-  header p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
-    color: #ddd; 
-  }
-  
-  nav {
-    background: rgba(147, 58, 58, 0.8);
-    padding: 10px 0;
-    position: sticky; 
+    color: #f00;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+nav {
+    background: rgba(255, 0, 0, 0.8);
+    padding: 15px 0;
+    position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  }
-  
-  nav ul {
+}
+
+.nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
-  }
-  
-  nav li {
+    padding: 0;
+}
+
+.nav-links li {
     margin: 0;
-  }
-  
-  nav a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
-    padding: 8px 12px;
+    font-weight: bold;
     transition: color 0.3s, transform 0.2s;
-  }
-  
-  nav a:hover {
-    color: #f00;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
     transform: scale(1.1);
-  }
-  
-  /* Main */
-  main {
-    padding: 40px 20px;
+}
+
+main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-  }
-  
-  /* Sections */
-  .card {
+    padding: 40px;
+}
+
+.card {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #900;
+    border: 2px solid #f00;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
-  }
-  
-  .card h2 {
-    margin-top: 0;
+}
+
+.card h2 {
     font-family: 'Orbitron', sans-serif;
-    color: #f00;
+    color: #ffcc00;
     font-size: 2em;
-  }
-  
-  .card p {
+}
+
+.card p {
     margin: 10px 0;
-  }
-  
-  .card a {
+}
+
+.btn {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 20px;
@@ -108,70 +103,52 @@ body {
     text-decoration: none;
     border-radius: 25px;
     transition: background 0.3s, transform 0.3s;
-  }
-  
-  .card a:hover {
+}
+
+.btn:hover {
     background: linear-gradient(45deg, #f00, #900);
     transform: scale(1.05);
-  }
-  
-  /* Images */
-  .hero-image {
+}
+
+.hero-image {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
     margin-bottom: 15px;
     transition: transform 0.3s, filter 0.3s;
-  }
-  
-  .hero-image:hover {
+}
+
+.hero-image:hover {
     transform: scale(1.05);
     filter: brightness(1.2);
-  }
-  
-  /* Footer */
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 20px 0;
     background: rgba(0, 0, 0, 0.8);
     color: #ddd;
     font-size: 0.9em;
     margin-top: 40px;
-    border-top: 2px solid #900;
-  }
-  
-  /* Media Queries pour la responsivité */
-  
-  /* Petits écrans, comme Samsung Galaxy A54 */
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 2em;
-    }
-  
-    nav ul {
-      flex-direction: column; /* Menu en colonne pour petits écrans */
-      align-items: center;
-    }
-  
-    nav li {
-      margin: 10px 0;
-    }
-  
-    main {
-      grid-template-columns: 1fr;
-    }
-  
-    .card {
-      padding: 15px;
-    }
-  
-    .card h2 {
-      font-size: 1.5em;
-    }
-  
-    .hero-image {
-      max-width: 90%; /* Images légèrement réduites pour petits écrans */
-    }
-  }
+    border-top: 3px solid #f00;
+}
 
-  
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .card {
+        padding: 15px;
+    }
+    .card h2 {
+        font-size: 1.5em;
+    }
+}
